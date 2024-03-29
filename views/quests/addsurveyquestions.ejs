@@ -23,6 +23,12 @@
               method="post"
             >
               <h4>Add new question the survey</h4>
+              <label for="course">Select a course to add</label>
+              <select  name="course" id="course">
+                <option value="BIO">BIO 101</option>
+                <option value="MTS">MTS 101</option>
+              </select>
+
               <label for="title">Question:</label>
               <input
                 type="text"
@@ -31,6 +37,53 @@
                 placeholder="Type question here"
                 required
               />
+
+              <label for="type">Select question type</label>
+              <select name="type" id="type" onchange="myMethod(this)">
+                <option value="OBJ" id="enableOption">Objective</option>
+                <option value="GER">Filling in the gap</option>
+              </select>
+              
+              <label for="Option">Options</label>
+              <input
+              style="display: none;"
+               type="text"
+               name="option1"
+               id="option"
+               placeholder="option1"
+               required
+               disabled
+              >
+
+              <input
+              style="display: none;"
+               type="text"
+               name="option2"
+               id="option"
+               placeholder="option2"
+               required
+               disabled
+              >
+
+              <input
+              style="display: none;"
+               type="text"
+               name="option3"
+               id="option"
+               placeholder="option3"
+               required
+               disabled
+              >
+
+              <input
+              style="display: none;"
+               type="text"
+               name="option4"
+               id="option"
+               placeholder="option4"
+               required
+               disabled
+              >
 
               <!--
               <label for="option">Option 1</label>
@@ -89,5 +142,18 @@
       </rightbar>
     </div>
 
+    <script>
+      function myMethod(this) {
+        // Get the input field and enable option
+        const option = document.getElementById('option');
+        const enableOption = document.getElementById('enableOption');
+
+        // Add click event listener to the button
+        enableOption.addEventListener('click', () => {
+            // Enable the option input field
+            option.disabled = false;
+        });
+      }
+    </script>
   </body>
 </html>

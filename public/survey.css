@@ -51,3 +51,10 @@ textarea {
     overflow-y: auto;
     padding-left: 0rem;
 }
+
+/* Question page*/
+
+.single-box {
+    min-width: 200px;
+    text-align: center;
+}

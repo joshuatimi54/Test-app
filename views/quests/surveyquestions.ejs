@@ -9,12 +9,46 @@
         <div
           class="d-flex p-5 mt-2 mb-3 justify-content-between bg-white rounded"
         >
-          <h1>Survey question</h1>
+          <h1>Test question</h1>
           <a href="/quests/addsurveyquestions"
             ><button class="btn btn-primary">Add question</button></a
           >
         </div>
-        <div class="quest-block d-sm-flex">
+        <div class="d-sm-flex justify-content-between">
+          <!-- Bio -->
+              <a href="/quests/testedusers" class="single-box">
+                <div class="mb-2 p-3 bg-white rounded">
+                  <h5>BIO</h5>
+                  <h6>101</h6>
+                </div>
+              </a>
+
+          <!-- CHEM -->
+              <a href="#" class="single-box">
+                <div class="mb-2 p-3 bg-white rounded">
+                  <h5>CHEM</h5>
+                  <h6>101</h6>
+                </div>
+              </a>
+
+          <!-- MTS -->
+              <a href="#" class="single-box">
+                <div class="mb-2 p-3 bg-white rounded">
+                  <h5>MTS</h5>
+                  <h6>101</h6>
+                </div>
+              </a>
+
+          <!-- GNS -->
+              <a href="#" class="single-box">
+                <div class="mb-2 p-3 bg-white rounded">
+                  <h5>GNS</h5>
+                  <h6>101</h6>
+                </div>
+              </a>
+
+        </div>
+        <!-- div class="quest-block d-sm-flex">
           <div class="quest-part">
             <% if (quests.length > 0) { %> <% quests.forEach(quest => { %>
 
@@ -29,7 +63,7 @@
             <% } %>
           </div>
           <%- include('../partials/minibar.ejs') %>
-        </div>
+        </div -->
       </div>
     </div>
 
